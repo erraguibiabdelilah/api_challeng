@@ -45,3 +45,6 @@ Accéder au projet via :
 
 Swagger UI :
 => http://127.0.0.1:8000/swagger/
+
+redoc UI :
+=> http://127.0.0.1:8000/redoc/
