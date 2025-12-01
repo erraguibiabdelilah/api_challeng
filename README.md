@@ -1,8 +1,8 @@
 
 1. Cloner le projet
 ```
-git clone <URL_DU_PROJET>
-cd <NOM_DU_DOSSIER>
+git clone https://github.com/erraguibiabdelilah/api_challeng.git
+cd api_challeng
 ```
 2. Créer et activer un environnement virtuel
 ```
