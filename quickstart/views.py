@@ -2,17 +2,17 @@ from rest_framework import viewsets
 from .models import Candidate, Recruiter, Skill, Experience, Education
 from .serializers import CandidateSerializer, RecruiterSerializer, SkillSerializer, ExperienceSerializer, EducationSerializer
 
-# Endpoints pour les candidats (CRUD complet)
+# Endpoints pour les candidats 
 class CandidateViewSet(viewsets.ModelViewSet):
     queryset = Candidate.objects.all()
     serializer_class = CandidateSerializer
 
-# Endpoints pour les recruteurs (lecture seule)
+# Endpoints pour les recruteurs 
 class RecruiterViewSet(viewsets.ModelViewSet):
     queryset = Recruiter.objects.all()
     serializer_class = RecruiterSerializer
 
-# Endpoints pour recruteur pour consulter les candidats (lecture seule)
+# Endpoints pour recruteur pour consulter les candidats 
 class RecruiterCandidateViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Candidate.objects.all()
     serializer_class = CandidateSerializer
